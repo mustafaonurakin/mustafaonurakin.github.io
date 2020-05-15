@@ -1,0 +1,23 @@
+.sidebar{
+    position: fixed;
+    background-color: #111;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.sidebar-avatar{
+    max-width: 110px;
+    border: 5px solid #484848;
+}
+#navbar-menu{
+    display: none;
+}
+@media (max-width:991.98px){
+    .sidebar{
+        display: none;
+    }
+    #navbar-menu{
+        display: flex;
+    }
+}
