@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/custom.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Mustafa Onur Akın | Front End Developer</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid px-0">
+        <div class="row mx-0">
             <nav id="navbar-menu" class="navbar navbar-expand-sm navbar-light bg-light col-lg-12">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -37,123 +40,234 @@
                     </ul>
                 </div>
             </nav>
-            <nav class="col-lg-2 sidebar text-center">
-                <div id="sidebar-header">
-                    <h1 class="text-white">merhaba</h1>
-                    <img src="images/profile.jpg" alt="Mustafa Onur Akın" class="sidebar-avatar rounded-circle">
-                </div>
-                <div id="sidebar-menu">
-                    <a href="/html/">HTML</a> |
-                    <a href="/css/">CSS</a> |
-                    <a href="/js/">JavaScript</a> |
-                    <a href="/jquery/">jQuery</a>
+            <nav class="col-lg-2 sidebar">
+                <div class="container d-flex h-100 flex-column justify-content-center align-items-center">
+                    <div id="sidebar-header" class="row">
+                        <img src="images/profile-avatar.jpg" alt="Mustafa Onur Akın"
+                            class="sidebar-avatar rounded-circle">
+                    </div>
+                    <div id="sidebar-content" class="row justify-content-center pb-4 pt-2 mx-0 text-center">
+                        <h4 class="row text-light">
+                            Mustafa Onur Akın
+                        </h4>
+                        <p class="lead text-muted row">Avaible for work.</p>
+                    </div>
+                    <div id="sidebar-menu" class="row">
+                        <ul class="list-unstyled nav flex-column align-items-center">
+                            <li class="nav-item"><a class="nav-link" href="#home-area">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about-area">About</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#services-area">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio-area">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact-area">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
-            <div id="main-wrapper" class="col-lg-10 ml-auto">
-                <div class="row">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum augue ut elit scelerisque
-                    ultrices. Nam in lectus vitae odio semper ullamcorper. Morbi a consectetur nunc. Nunc accumsan sem
-                    non ligula efficitur, quis semper metus fermentum. Aliquam non dolor dignissim, vestibulum ante id,
-                    tincidunt nisi. Praesent pellentesque consectetur dignissim. Integer congue odio ut risus fringilla,
-                    non accumsan massa imperdiet. Donec ut erat dignissim, sagittis leo quis, facilisis magna. Fusce
-                    ultricies lectus magna, ornare elementum mi mollis a. Phasellus eu libero at mauris imperdiet
-                    egestas vel sit amet lacus. Morbi elementum posuere libero non scelerisque. Mauris non massa
-                    ultrices, luctus augue nec, consequat ligula.
+            <div id="main-wrapper" class="col-lg-10 ml-auto px-0">
+                <section id="home-area">
+                    <div id="particles-js" class="h-100"></div>
+                    <div class="row mx-0 h-100 pa-top-center">
+                        <div
+                            class="col-12 px-0 d-flex justify-content-center flex-column align-items-center text-white text-center">
+                            <h1>Hello, my name is Mustafa.</h1>
+                            <div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
+                                <div class="p-1 bd-highlight h4">I'm a</div>
+                                <div class="d-flex flex-column clip h4 pr-2">
+                                    <div class="p-1 bd-highlight word">Front-end Developer</div>
+                                    <div class="p-1 bd-highlight word word-invisible">Freelancer</div>
+                                    <div class="p-1 bd-highlight word word-invisible">Self-taught Developer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec
-                    posuere in augue at ullamcorper. Vivamus egestas tristique scelerisque. Nulla a vulputate diam.
-                    Suspendisse sollicitudin purus sit amet facilisis dictum. Maecenas congue nibh vitae aliquam
-                    bibendum. Maecenas viverra justo dui, sit amet lacinia sem tincidunt quis.
+                <section id="about-area" class="py-5 px-5">
+                    <div class="container">
+                        <div class="row mx-0 mb-5">
+                            <div class="col-12 px-0">
+                                <h1 class="font-weight-bold">About me</h1>
+                                <small class="lead text-secondary">Get to know me</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <img src="images/profile-about.jpg" alt="Mustafa Onur Akın"
+                                    class="img-thumbnail max-vw-100 mx-auto d-block profile-about">
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <!-- <h4 class="text-primary">Who am i?</h4> -->
+                                <p class="lead">
+                                    I'm a front-end developer and a self-taught developer in the Izmir,
+                                    Turkey. <br>I'm professionally experinced with
+                                    the software development and the information technology for 5 years.</p>
 
-                    Sed condimentum lobortis consectetur. Morbi varius nunc vitae leo suscipit, at lacinia mauris
-                    commodo. Sed tristique nulla ipsum, sed placerat eros bibendum id. Aliquam sagittis mi ac sapien
-                    placerat pharetra. Proin scelerisque, mi vitae consequat vulputate, diam lacus facilisis diam, et
-                    hendrerit tellus turpis sed diam. Praesent laoreet, elit ac tincidunt consectetur, dui mauris auctor
-                    nulla, id laoreet lorem felis quis felis. Sed velit dolor, varius nec purus et, auctor semper magna.
-                    In auctor dui vitae nulla congue, non mattis sapien egestas. Cras vulputate eros nec tempus tempor.
-                    Aenean pulvinar, purus non efficitur convallis, dui justo volutpat diam, in sollicitudin est mi ut
-                    nibh. Cras sapien urna, rutrum et lorem nec, vehicula gravida tortor. Suspendisse elementum gravida
-                    sapien, ut ultricies est efficitur a. Sed semper quis augue a finibus. Vestibulum in venenatis eros.
-                    Aliquam mattis tempus tellus, sit amet aliquet leo blandit nec.
-
-                    Proin viverra mattis condimentum. Mauris non bibendum risus. Donec blandit tristique tortor id
-                    pretium. In hac habitasse platea dictumst. Pellentesque pulvinar fermentum imperdiet. Nulla cursus
-                    nisi lorem, sit amet sagittis libero viverra ac. Pellentesque convallis semper velit id faucibus.
-
-                    Duis id mi mi. Etiam sit amet est ullamcorper, hendrerit massa in, vulputate purus. Vestibulum
-                    faucibus convallis orci ut mattis. Maecenas sit amet bibendum purus. Morbi a ultrices arcu, ut
-                    rutrum massa. Vestibulum et condimentum ligula. Fusce imperdiet enim nec nisl viverra consequat. Ut
-                    dictum neque a lacus pretium accumsan. Curabitur laoreet metus nibh, at auctor turpis maximus non.
-                    Maecenas sit amet sapien ac urna ullamcorper fermentum vitae vitae nunc.
-
-                    Morbi at eros eget lacus condimentum elementum a at nulla. Duis nec condimentum ipsum, vitae
-                    fermentum neque. Duis condimentum erat id purus sodales, eget vestibulum dui bibendum. Nullam
-                    pharetra commodo convallis. Sed quis finibus massa, quis vulputate felis. Cras ac sem eget ex
-                    iaculis malesuada vel sagittis ligula. Duis at sem vel orci aliquet vehicula non a orci. Proin massa
-                    tellus, eleifend vel cursus a, consequat quis libero. Ut in ipsum laoreet, varius risus eget, luctus
-                    ipsum. Aliquam lacinia lorem eu hendrerit auctor. Nunc vestibulum sem lobortis dui venenatis, eget
-                    faucibus neque tincidunt. Quisque ac eleifend mi.
-
-                    Etiam laoreet nunc vel sapien ultricies finibus. Nunc hendrerit mollis arcu, a ullamcorper enim
-                    dictum vel. Sed sit amet odio condimentum, maximus ligula a, tempus quam. Pellentesque condimentum
-                    imperdiet pretium. Nam bibendum sapien eu sem accumsan tincidunt. Fusce ut lacus ut eros faucibus
-                    suscipit. Nulla porta urna sit amet ex semper, consectetur congue felis egestas. Phasellus tristique
-                    cursus massa pretium tincidunt. Nam a purus et ligula lacinia posuere eget in felis.
-
-                    Duis lobortis tincidunt porta. Ut lacus mi, mollis eu felis id, bibendum auctor felis. Phasellus
-                    vehicula ante sed dui pharetra, ut egestas arcu convallis. Sed posuere justo neque, congue placerat
-                    diam iaculis id. Duis sed rhoncus tortor. Duis condimentum in dui lobortis semper. Aenean interdum
-                    tellus turpis, quis interdum ipsum placerat eu. Mauris eget rhoncus lacus, ut vulputate odio. Etiam
-                    purus mauris, ultrices eget ullamcorper sed, aliquam non ex.
-
-                    Nullam lacinia luctus quam faucibus laoreet. Morbi ligula nibh, feugiat viverra eleifend et, rutrum
-                    non mauris. Suspendisse sit amet iaculis quam. Sed vitae orci non nisi pretium placerat. Ut feugiat
-                    vulputate commodo. Nam in sapien lorem. Aenean molestie purus eget ipsum ullamcorper tempus. Nam ut
-                    risus dapibus, elementum ex viverra, tincidunt augue. Aliquam nisl dolor, pretium et arcu ut,
-                    bibendum efficitur elit.
-
-                    Suspendisse aliquam eget orci ut pharetra. Donec cursus aliquet vehicula. Proin vitae vulputate
-                    nunc, ut aliquet tortor. Morbi sed arcu feugiat, condimentum urna nec, varius ipsum. Aliquam non
-                    urna sapien. In nec vulputate erat, et aliquam metus. Quisque nunc velit, consequat ac turpis nec,
-                    aliquet fermentum metus.
-
-                    Maecenas sit amet leo quis neque rhoncus scelerisque quis vulputate magna. Mauris posuere eros in
-                    lobortis feugiat. Nam nunc sem, varius a imperdiet id, elementum et velit. Maecenas egestas mattis
-                    velit, at mollis lacus congue eget. Aliquam molestie sed erat quis porttitor. Cras pretium augue
-                    augue, eget rutrum magna pharetra nec. Maecenas eget consequat massa.
-
-                    In laoreet nisl id elit mattis, non tempor purus commodo. Donec commodo, turpis ut accumsan
-                    condimentum, sapien est sagittis est, eget tristique orci dolor nec enim. Nunc vitae quam lacus.
-                    Proin id mauris interdum, tincidunt justo id, fringilla tortor. Orci varius natoque penatibus et
-                    magnis dis parturient montes, nascetur ridiculus mus. Curabitur aliquam mollis velit, non lobortis
-                    nibh ornare id. Suspendisse urna erat, scelerisque eu aliquet nec, elementum nec leo.
-
-                    Praesent feugiat neque a orci ornare, vel suscipit erat congue. Nullam a ante eu metus suscipit
-                    facilisis. In facilisis laoreet justo a sollicitudin. Vivamus lacus nibh, aliquam sed elit sit amet,
-                    condimentum pretium mauris. Aliquam erat volutpat. Curabitur aliquet ex non nisl varius tincidunt.
-                    Donec mollis leo libero, vel tincidunt metus posuere ut. Donec ac tellus egestas metus tincidunt
-                    iaculis.
-
-                    Phasellus mi dolor, hendrerit ut condimentum at, ultrices ut ex. Mauris id enim mattis orci
-                    fringilla fringilla eget sed mi. Aliquam luctus rutrum tellus id ullamcorper. Duis a orci eu mauris
-                    interdum egestas. In eget consectetur ante. Nam velit leo, consequat vel laoreet quis, tristique
-                    eget nunc. Aenean dolor lorem, ultricies eget magna id, ultricies semper massa. Sed vitae vulputate
-                    leo. Vestibulum sit amet molestie urna.
-
-                    Nullam placerat vel augue vel dignissim. Orci varius natoque penatibus et magnis dis parturient
-                    montes, nascetur ridiculus mus. Nam gravida vestibulum quam, at lobortis turpis rhoncus at. Aenean
-                    vel rhoncus mi, quis pharetra odio. Duis volutpat auctor nisi, id varius lorem. Quisque semper
-                    pretium lacus, faucibus eleifend tortor maximus ut. In non odio nunc. Vivamus viverra purus ut
-                    malesuada pretium. Duis scelerisque risus nec velit euismod scelerisque. In vitae turpis a ante
-                    venenatis volutpat eget nec libero. Duis sed mattis orci. Integer quis egestas elit. Vivamus
-                    imperdiet feugiat vulputate. Cras in suscipit metus.
-
-                    Maecenas placerat eget ex in facilisis. Praesent rhoncus vulputate placerat. Curabitur non rutrum
-                    massa. Sed venenatis eros sit amet mauris pharetra mollis. Orci varius natoque penatibus et magnis
-                    dis parturient montes, nascetur ridiculus mus. Fusce porttitor urna id facilisis vulputate. Nullam
-                    sed ex convallis dolor dignissim viverra in vitae sem. Sed diam sapien, molestie quis purus eu,
-                    auctor consectetur odio.
-                </div>
+                                <p class="lead">
+                                    I like to code things and i love what i do.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="services-area" class="p-5 bg-light">
+                    <div class="container">
+                        <div class="row mx-0 mb-5">
+                            <div class="col-12 px-0">
+                                <h1 class="font-weight-bold">Services</h1>
+                                <small class="lead text-secondary">Services i offer</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="d-flex flex-row mb-3 border bg-white">
+                                    <div class="p-2 flex-grow-1">
+                                        <div class="d-flex flex-column mb-3 text-center">
+                                            <div class="p-2 flex-grow-1">
+                                                <ion-icon name="code-outline"></ion-icon>
+                                            </div>
+                                            <div class="p-2 flex-grow-1">
+                                                <h6 class="mb-0">
+                                                    Web Development
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-row mb-3 border bg-white">
+                                    <div class="p-2 flex-grow-1">
+                                        <div class="d-flex flex-column mb-3 text-center">
+                                            <div class="p-2 flex-grow-1">
+                                                <ion-icon name="phone-portrait-outline"></ion-icon>
+                                            </div>
+                                            <div class="p-2 flex-grow-1">
+                                                <h6 class="mb-0">
+                                                    Responsive Design
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="d-flex flex-row mb-3 border bg-white">
+                                    <div class="p-2 flex-grow-1">
+                                        <div class="d-flex flex-column mb-3 text-center">
+                                            <div class="p-2 flex-grow-1">
+                                                <ion-icon name="construct-outline"></ion-icon>
+                                            </div>
+                                            <div class="p-2 flex-grow-1">
+                                                <h6 class="mb-0">
+                                                    PSD to HTML
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-row mb-3 border bg-white">
+                                    <div class="p-2 flex-grow-1">
+                                        <div class="d-flex flex-column mb-3 text-center">
+                                            <div class="p-2 flex-grow-1">
+                                                <ion-icon name="logo-wordpress"></ion-icon>
+                                            </div>
+                                            <div class="p-2 flex-grow-1">
+                                                <h6 class="mb-0">
+                                                    Wordpress
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="portfolio-area" class="p-5">
+                    <div class="container">
+                        <div class="row mx-0 mb-5">
+                            <div class="col-12 px-0">
+                                <h1 class="font-weight-bold">Portfolio</h1>
+                                <small class="lead text-secondary">Check out my works</small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact-area" class="p-5 bg-light">
+                    <div class="container">
+                        <div class="row mx-0 mb-5">
+                            <div class="col-12 px-0">
+                                <h1 class="font-weight-bold">Contact</h1>
+                                <small class="lead text-secondary">Get in touch with me</small>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-8">
+                                <form class="border rounded bg-white p-5 shadow">
+                                    <div class="form-row">
+                                        <div class="form-group col-6">
+                                            <input type="text" class="form-control" placeholder="First name">
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <input type="text" class="form-control" placeholder="Last name">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-12">
+                                            <input type="text" class="form-control" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-12">
+                                            <textarea class="form-control" placeholder="Message" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-12">
+                                            <button type="button" class="btn btn-primary btn-block">Send
+                                                Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer id="footer-area" class="p-5">
+                    <div class="container">
+                        <div class="row p-2 border-bottom border-light">
+                            <div class="col-12">
+                                <p class="lead text-white text-center">This website builded with
+                                    HTML,CSS,Javascript
+                                    and has a
+                                    public
+                                    repository on <a
+                                        href="https://github.com/mustafaonurakin/mustafaonurakin.github.io">Github</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-12">
+                                <div class="d-flex flex-row flex-grow-1 justify-content-center">
+                                    <div class="p-2">
+                                        <a href="#" class="fa fa-github"></a>
+                                    </div>
+                                    <div class="p-2">
+                                        <a href="#" class="fa fa-twitter"></a>
+                                    </div>
+                                    <div class="p-2">
+                                        <a href="#" class="fa fa-linkedin"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
 
@@ -161,6 +275,13 @@
     <script src="scripts/jquery-3.5.1.slim.min.js"></script>
     <script src="scripts/popper.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <!-- Particles -->
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/app.js"></script>
+    <!-- Ion Icons -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 
 </html>
