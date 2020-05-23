@@ -17,30 +17,33 @@
 <body>
     <div class="container-fluid px-0">
         <div class="row mx-0">
-            <nav id="navbar-menu" class="navbar navbar-expand-sm navbar-light bg-light col-lg-12">
-                <a class="navbar-brand" href="#">Navbar</a>
+            <nav id="navbar-menu" class="navbar navbar-expand-sm navbar-dark bg-dark col-lg-12 fixed-top">
+                <a class="navbar-brand" href="#">Menu</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home-area">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#about-area">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#services-area">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#portfolio-area">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-area">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <nav class="col-lg-2 sidebar">
+            <nav class="col-lg-2 sidebar bg-dark">
                 <div class="container d-flex h-100 flex-column justify-content-center align-items-center">
                     <div id="sidebar-header" class="row">
                         <img src="images/profile-avatar.jpg" alt="Mustafa Onur Akın"
@@ -97,7 +100,6 @@
                                     class="img-thumbnail max-vw-100 mx-auto d-block profile-about">
                             </div>
                             <div class="col-12 col-lg-8">
-                                <!-- <h4 class="text-primary">Who am i?</h4> -->
                                 <p class="lead">
                                     I'm a front-end developer and a self-taught developer in the Izmir,
                                     Turkey. <br>I'm professionally experinced with
@@ -120,14 +122,14 @@
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <div class="d-flex flex-row mb-3 border bg-white">
-                                    <div class="p-2 flex-grow-1">
-                                        <div class="d-flex flex-column mb-3 text-center">
-                                            <div class="p-2 flex-grow-1">
-                                                <ion-icon name="code-outline"></ion-icon>
+                                <div class="d-flex flex-row mb-4 justify-content-center border bg-white">
+                                    <div class="p-2">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div class="p-2">
+                                                <i class="fa fa-code"></i>
                                             </div>
-                                            <div class="p-2 flex-grow-1">
-                                                <h6 class="mb-0">
+                                            <div class="p-2 text-center">
+                                                <h6>
                                                     Web Development
                                                 </h6>
                                             </div>
@@ -136,14 +138,14 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="d-flex flex-row mb-3 border bg-white">
-                                    <div class="p-2 flex-grow-1">
-                                        <div class="d-flex flex-column mb-3 text-center">
-                                            <div class="p-2 flex-grow-1">
-                                                <ion-icon name="phone-portrait-outline"></ion-icon>
+                                <div class="d-flex flex-row mb-4 justify-content-center border bg-white">
+                                    <div class="p-2">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div class="p-2">
+                                                <i class="fa fa-mobile"></i>
                                             </div>
-                                            <div class="p-2 flex-grow-1">
-                                                <h6 class="mb-0">
+                                            <div class="p-2 text-center">
+                                                <h6>
                                                     Responsive Design
                                                 </h6>
                                             </div>
@@ -154,14 +156,14 @@
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <div class="d-flex flex-row mb-3 border bg-white">
-                                    <div class="p-2 flex-grow-1">
-                                        <div class="d-flex flex-column mb-3 text-center">
-                                            <div class="p-2 flex-grow-1">
-                                                <ion-icon name="construct-outline"></ion-icon>
+                                <div class="d-flex flex-row mb-4 justify-content-center border bg-white">
+                                    <div class="p-2">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div class="p-2">
+                                                <i class="fa fa-clone"></i>
                                             </div>
-                                            <div class="p-2 flex-grow-1">
-                                                <h6 class="mb-0">
+                                            <div class="p-2 text-center">
+                                                <h6>
                                                     PSD to HTML
                                                 </h6>
                                             </div>
@@ -170,14 +172,14 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="d-flex flex-row mb-3 border bg-white">
-                                    <div class="p-2 flex-grow-1">
-                                        <div class="d-flex flex-column mb-3 text-center">
-                                            <div class="p-2 flex-grow-1">
-                                                <ion-icon name="logo-wordpress"></ion-icon>
+                                <div class="d-flex flex-row mb-4 justify-content-center border bg-white">
+                                    <div class="p-2">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div class="p-2">
+                                                <i class="fa fa-wordpress"></i>
                                             </div>
-                                            <div class="p-2 flex-grow-1">
-                                                <h6 class="mb-0">
+                                            <div class="p-2 text-center">
+                                                <h6>
                                                     Wordpress
                                                 </h6>
                                             </div>
@@ -210,10 +212,10 @@
                             <div class="col-lg-6 col-md-8">
                                 <form class="border rounded bg-white p-5 shadow">
                                     <div class="form-row">
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-md-6 col-12">
                                             <input type="text" class="form-control" placeholder="First name">
                                         </div>
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-md-6 col-12">
                                             <input type="text" class="form-control" placeholder="Last name">
                                         </div>
                                     </div>
@@ -238,7 +240,7 @@
                         </div>
                     </div>
                 </section>
-                <footer id="footer-area" class="p-5">
+                <footer id="footer-area" class="p-5 bg-dark">
                     <div class="container">
                         <div class="row p-2 border-bottom border-light">
                             <div class="col-12">
@@ -280,8 +282,6 @@
     <!-- Particles -->
     <script src="scripts/particles.js"></script>
     <script src="scripts/app.js"></script>
-    <!-- Ion Icons -->
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 
 </html>

@@ -69,35 +69,5 @@ setTimeout(() => {
     wordContainer.style.flex = 0;
 }, 5000)
 
-// function resizeEvents(e) {
-
-//     // console.log(this.innerWidth);
-
-
-
-// }
-
-// function loadEvents() {
-
-//     resizeEvents();
-
-// }
-
-// function resizeProfileAbout() {
-//     /* window is between small and medium size right now */
-//     /* add w-25 , rounded-circle and change img src */
-//     if (this.innerWidth > 991){
-//         profileAbout.classList.
-//     }
-//     if (this.innerWidth <= 991) {
-//         profileAbout.classList.remove('max-vw-100');
-//         profileAbout.classList.add('w-25');
-//         profileAbout.classList.add('rounded-circle');
-//         profileAbout.setAttribute('src', sidebarAvatarSrc);
-//     }
-
-// }
-
 wordContainer.addEventListener('transitionend', toggleFlex);
-window.addEventListener('resize', resizeEvents);
-window.addEventListener('onload', loadEvents);
+
