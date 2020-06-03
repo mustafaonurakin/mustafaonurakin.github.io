@@ -85,8 +85,7 @@
                         </div>
                     </div>
                 </section>
-
-                <section id="about-area" class="py-5 px-5">
+                <section id="about-area" class="single-section">
                     <div class="container">
                         <div class="row mx-0 mb-5">
                             <div class="col-12 px-0">
@@ -112,7 +111,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="services-area" class="p-5 bg-light">
+                <section id="services-area" class="single-section bg-light">
                     <div class="container">
                         <div class="row mx-0 mb-5">
                             <div class="col-12 px-0">
@@ -190,7 +189,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="portfolio-area" class="p-5">
+                <section id="portfolio-area" class="single-section">
                     <div class="container">
                         <div class="row mx-0 mb-5">
                             <div class="col-12 px-0">
@@ -198,9 +197,94 @@
                                 <small class="lead text-secondary">Check out my works</small>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- Filter -->
+                                <ul class="list-inline portfolio-filter">
+                                    <li class="list-inline-item tab-active" data-filter="*">All</li>
+                                    <li class="list-inline-item" data-filter=".frontend">Front-end</li>
+                                    <li class="list-inline-item" data-filter=".backend">Back-end</li>
+                                    <li class="list-inline-item" data-filter=".python">Python</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row portfolio-container">
+                            <!-- Single Item -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-4 portfolio-single frontend">
+                                <div class="portfolio-wrapper d-flex flex-column">
+                                    <img src="images/item-1.jpg" alt="" class="img-fluid">
+                                    <div class="portfolio-content">
+                                        <h6 class="portfolio-header text-light">HTML, CSS, Javascript</h6>
+                                        <div class="portfolio-link">
+                                            <a class="nav-link" href="#">more info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-4 portfolio-single frontend">
+                                <div class="portfolio-wrapper d-flex flex-column">
+                                    <img src="images/item-2.jpg" alt="" class="img-fluid">
+                                    <div class="portfolio-content">
+                                        <h6 class="portfolio-header text-light">HTML, CSS, Javascript</h6>
+                                        <div class="portfolio-link">
+                                            <a class="nav-link" href="#">more info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-4 portfolio-single backend">
+                                <div class="portfolio-wrapper d-flex flex-column">
+                                    <img src="images/item-3.jpg" alt="" class="img-fluid">
+                                    <div class="portfolio-content">
+                                        <h6 class="portfolio-header text-light">HTML, CSS, Javascript</h6>
+                                        <div class="portfolio-link">
+                                            <a class="nav-link" href="#">more info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-4 portfolio-single backend">
+                                <div class="portfolio-wrapper d-flex flex-column">
+                                    <img src="images/item-4.jpg" alt="" class="img-fluid">
+                                    <div class="portfolio-content">
+                                        <h6 class="portfolio-header text-light">HTML, CSS, Javascript</h6>
+                                        <div class="portfolio-link">
+                                            <a class="nav-link" href="#">more info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-4 portfolio-single python">
+                                <div class="portfolio-wrapper d-flex flex-column">
+                                    <img src="images/item-5.jpg" alt="" class="img-fluid">
+                                    <div class="portfolio-content">
+                                        <h6 class="portfolio-header text-light">HTML, CSS, Javascript</h6>
+                                        <div class="portfolio-link">
+                                            <a class="nav-link" href="#">more info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-4 portfolio-single python">
+                                <div class="portfolio-wrapper d-flex flex-column">
+                                    <img src="images/item-6.jpg" alt="" class="img-fluid">
+                                    <div class="portfolio-content">
+                                        <h6 class="portfolio-header text-light">HTML, CSS, Javascript</h6>
+                                        <div class="portfolio-link">
+                                            <a class="nav-link" href="#">more info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <section id="contact-area" class="p-5 bg-light">
+                <section id="contact-area" class="single-section bg-light">
                     <div class="container">
                         <div class="row mx-0 mb-5">
                             <div class="col-12 px-0">
@@ -240,7 +324,7 @@
                         </div>
                     </div>
                 </section>
-                <footer id="footer-area" class="p-5 bg-dark">
+                <footer id="footer-area" class="single-section bg-dark">
                     <div class="container">
                         <div class="row p-2 border-bottom border-light">
                             <div class="col-12">
@@ -274,10 +358,10 @@
         </div>
 
     </div>
-    <script src="scripts/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="scripts/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="scripts/jquery.min.js"></script>
     <script src="scripts/popper.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
     <!-- Particles -->
     <script src="scripts/particles.js"></script>

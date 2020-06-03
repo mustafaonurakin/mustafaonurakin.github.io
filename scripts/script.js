@@ -28,6 +28,11 @@ const words = document.querySelectorAll('.word');
 const aboutArea = document.querySelector('#about-area');
 const sidebarAvatar = document.querySelector('.sidebar-avatar');
 const sidebarAvatarSrc = sidebarAvatar.getAttribute('src');
+const navbar = document.querySelector('#navbarNav');
+const navLink = navbar.querySelectorAll('.nav-link');
+const navToggler = document.querySelector('.navbar-toggler');
+const portfolioFilters = document.querySelectorAll('.portfolio-filter li');
+const portfolioItems = document.querySelectorAll('.portfolio-single');
 /* */
 let profileAbout = document.querySelector('.profile-about');
 let profileAboutSrc = profileAbout.getAttribute('src');
@@ -69,5 +74,38 @@ setTimeout(() => {
     wordContainer.style.flex = 0;
 }, 5000)
 
-wordContainer.addEventListener('transitionend', toggleFlex);
+function toggleFilter(e) {
 
+    const filter = e.target.dataset.filter;
+
+    if (filter === '*') {
+        $('.portfolio-single').show('1000');
+    } else {
+        $('.portfolio-single').not(filter).hide('3000');
+        $('.portfolio-single').filter(filter).show('3000');
+    }
+
+    Array.from(portfolioFilters).map(li => {
+        if (this.dataset.filter === li.dataset.filter) {
+            this.classList.add('tab-active');
+        } else {
+            li.classList.remove('tab-active');
+        }
+    });
+
+
+    // Array.from(portfolioItems).map((item) => {
+    //     if (!item.classList.contains(filter.replace('.', ''))) {
+    //         item.classList.add('portfolio-item-invis')
+    //         item.addEventListener('transitionend', () => item.setAttribute('style', 'display:none;'))
+    //     } else {
+    //         item.classList.remove('portfolio-item-invis')
+    //         item.classList.add('portfolio-item-show')
+    //         item.addEventListener('transitionend', () => item.setAttribute('style', ''))
+    //     }
+    // })
+}
+
+wordContainer.addEventListener('transitionend', toggleFlex);
+navLink.forEach(nav => nav.addEventListener('click', () => $('.collapse').collapse('hide')));
+portfolioFilters.forEach(filter => filter.addEventListener('click', toggleFilter));
